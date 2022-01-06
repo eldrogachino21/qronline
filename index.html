@@ -16,13 +16,11 @@
   margin-top:15px;
 }
     </style>
+   
    <input id="text" type="text" value="https://hogangnono.com" style="width:80%" /><br />
-<div id="qrcode"></div>
-<script type="text/javascript">
-new QRCode(document.getElementById("qrcode"), "http://jindo.dev.naver.com/collie");
-</script>
-<script>
-    var qrcode = new QRCode("qrcode");
+   <div id="qrcode"></div>
+   <script>
+       var qrcode = new QRCode("qrcode");
 
 function makeCode () {    
   var elText = document.getElementById("text");
@@ -47,6 +45,6 @@ $("#text").
       makeCode();
     }
   });
-</script>
+   </script>
 </body>
 </html>
